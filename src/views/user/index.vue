@@ -1,6 +1,7 @@
 <template>
   <div class="wrap">
        {{mes}}
+       <div></div>
   </div>
 </template>
 
@@ -16,10 +17,15 @@
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
    .wrap{
-       width: 300px;
-       height: 300px;
+       width: 10rem;
+       height: 10rem;
        background: red;
+       &>div{
+           width: 5rem;
+           height: 5rem;
+           background: green;
+       }
    }
 </style>
