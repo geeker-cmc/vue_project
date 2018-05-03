@@ -1,0 +1,5 @@
+
+
+@function setrem($num){
+    @return $num/750 * 10 + rem
+}
