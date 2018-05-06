@@ -19,12 +19,15 @@
             <input type="text" class="item-left" placeholder="请输入手机号" />
           </div>
        </div>
+       <hello-world></hello-world>
   </div>
 </template>
 
 <script>
+import helloWorld from '../../components/HelloWorld.vue'
  export default {
-     name: 'User',
+     name: 'user',
+     components: {helloWorld},
      data(){
          return {
              mes: 'test'
@@ -39,7 +42,7 @@
    .wrap{
        width: 100%;
        height: 100%;
-       background: red;
+       background: #f5f5f5;
        .banner{
            width: 100%;
            height: setrem(360);

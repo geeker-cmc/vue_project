@@ -1,17 +1,17 @@
 <template>
   <div class="hello">
-     <h1>加载</h1>
+     <h1>{{mes}}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  props: ['mes']
 }
 </script>
 
